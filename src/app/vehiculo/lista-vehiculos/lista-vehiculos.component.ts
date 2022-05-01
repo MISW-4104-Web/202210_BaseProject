@@ -16,7 +16,7 @@ export class ListaVehiculosComponent implements OnInit {
   constructor(private vehiculoService: VehiculoService) {}
 
   ngOnInit() {
-    this.vehiculoService.getAllMuseums().subscribe((vehiculos) => {
+    this.vehiculoService.getAllVehicles().subscribe((vehiculos) => {
       this.vehiculos = vehiculos;
 
       vehiculos.forEach((vehiculo) => {

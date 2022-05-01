@@ -11,7 +11,7 @@ export class VehiculoService {
 
   constructor(private http: HttpClient) {}
 
-  getAllMuseums(): Observable<Vehiculo[]> {
+  getAllVehicles(): Observable<Vehiculo[]> {
     const endpoint = this.apiUrl;
     return this.http.get<Vehiculo[]>(endpoint);
   }

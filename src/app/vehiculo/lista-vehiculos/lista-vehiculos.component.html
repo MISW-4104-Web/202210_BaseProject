@@ -16,3 +16,8 @@
     </tr>
   </tbody>
 </table>
+<div>
+  <div *ngFor="let marca of contadorMarcas | keyvalue">
+    {{ marca.key }}: {{ marca.value }}
+  </div>
+</div>

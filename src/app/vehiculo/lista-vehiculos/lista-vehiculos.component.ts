@@ -9,13 +9,22 @@ import { VehiculoService } from '../vehiculo.service';
 })
 export class ListaVehiculosComponent implements OnInit {
   vehiculos: Vehiculo[] = [];
+  contadorMarcas: {
+    [key: string]: number;
+  } = {};
 
   constructor(private vehiculoService: VehiculoService) {}
 
   ngOnInit() {
-    console.log('iniai');
     this.vehiculoService.getAllMuseums().subscribe((vehiculos) => {
       this.vehiculos = vehiculos;
+
+      vehiculos.forEach((vehiculo) => {
+        if (!this.contadorMarcas[vehiculo.marca]) {
+          this.contadorMarcas[vehiculo.marca] = 0;
+        }
+        this.contadorMarcas[vehiculo.marca]++;
+      });
     });
   }
 }

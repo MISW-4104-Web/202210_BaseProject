@@ -1,3 +1,7 @@
 * [lang^=en] {
   color: green;
 }
+
+.main {
+  min-height: 85vh;
+}

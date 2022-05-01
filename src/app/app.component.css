@@ -14,3 +14,9 @@
 .app-section {
   max-width: 600px;
 }
+
+
+.app-main{
+  display: grid;
+  grid-template-rows: repeat(3,min-content) 1fr min-content;
+}

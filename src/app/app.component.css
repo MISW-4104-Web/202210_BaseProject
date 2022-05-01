@@ -2,7 +2,6 @@
   color: green;
 }
 
-
 .app-header {
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 6px -5px rgba(222,222,222,0.32);
@@ -10,4 +9,8 @@
   font-weight: 700;
   font-size: 36px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.app-section {
+  max-width: 600px;
 }

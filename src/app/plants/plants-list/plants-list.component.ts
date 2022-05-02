@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Plant } from '../plant';
+import { PlantService } from '../plant.service';
 
 
 @Component({
@@ -9,9 +10,14 @@ import { Plant } from '../plant';
 })
 export class PlantsListComponent implements OnInit {
   plants: Array<Plant> = [];
-  constructor() { }
-
+  constructor(private plantService: PlantService) { }
+  getPlants(): void {
+    this.plantService.getPlants().subscribe((plants) => {
+      this.plants = plants;
+    });
+  }
   ngOnInit() {
+    this.getPlants();
   }
 
 }

@@ -1,3 +1,34 @@
-<p>
-  plants-list works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Vivero El Otoño</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img src="https://media.istockphoto.com/photos/tree-growth-three-steps-in-nature-and-beautiful-morning-lighting-picture-id956366756" alt="Plant">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre común</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Clima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let plant of plants">
+            <th scope="row">{{ plant.id }}</th>
+            <td>{{ plant.nombre_comun }}</td>
+            <td>{{ plant.tipo }}</td>
+            <td>{{ plant.clima }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

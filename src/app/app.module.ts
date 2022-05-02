@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,7 +13,8 @@ import { PlantsModule } from './plants/plants.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PlantsModule
+    PlantsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

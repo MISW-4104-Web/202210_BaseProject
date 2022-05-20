@@ -16,11 +16,16 @@
   background-color: #EDEDED;
 }
 
-.img-padding{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.tittle-padding{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.tittle-margin{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .font{

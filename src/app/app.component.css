@@ -1,3 +1,48 @@
-* [lang^=en] {
-  color: green;
+.blue-bg{
+  background-color: #23A1B7;
+}
+
+.img-50{
+  width: 40%;
+  height: auto;
+}
+
+.center {
+  display:block;
+  margin:auto;
+}
+
+.bg-gray{
+  background-color: #EDEDED;
+}
+
+.img-padding{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.font{
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: xx-large;
+  vertical-align: middle;
+}
+
+.margin-top{
+  margin-top: 2rem;
+}
+
+.mini-margin-top{
+  margin-top: 1rem;
+}
+
+.super-margin-top{
+  margin-top: 4rem;
+}
+
+.tittle{
+  font-size: 5rem;
+  font-weight: bolder;
 }

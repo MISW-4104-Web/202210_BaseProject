@@ -1,0 +1,18 @@
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Collection</th>
+      <th scope="col">Price ($USD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let articulo of articulos" class="clickable" (click)="clickArticulo(articulo)">
+      <td>{{articulo.id}}</td> <!-- <th scope="row"> si quiero que sea bold -->
+      <td>{{articulo.name}}</td>
+      <td>{{articulo.collection}}</td>
+      <td>{{articulo.price}}</td>
+    </tr>
+  </tbody>
+</table>

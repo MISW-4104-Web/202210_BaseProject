@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <app-listar-articulos [articulos]="articulos" (clickArticulos)="clickArticulo($event)"></app-listar-articulos>
+      <p>Average price: {{promedio}}</p>
+    </div>
+    <div class="col-5">
+      <app-detallar-articulos [articulo]="articuloSeleccionado" *ngIf="articuloSeleccionado"></app-detallar-articulos>
+    </div>
+  </div>
+</div>
